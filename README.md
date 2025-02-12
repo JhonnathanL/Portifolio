@@ -1,50 +1,58 @@
-# React + TypeScript + Vite
+# Projeto React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um template simples de um projeto utilizando React, TypeScript e Vite.
 
-Currently, two official plugins are available:
+## Pré-requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Node.js](https://nodejs.org/) (Recomendado versão 16 ou superior)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/) (gerenciador de pacotes)
 
-## Expanding the ESLint configuration
+## Passos para rodar o projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone o repositório:
 
-- Configure the top-level `parserOptions` property like this:
+    ```bash
+    git clone https://link-do-repositorio.git
+    cd nome-do-projeto
+    ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. Instale as dependências:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+    Com `npm`:
+    ```bash
+    npm install
+    ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+    Ou com `yarn`:
+    ```bash
+    yarn install
+    ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+3. Execute o projeto:
+
+    Com `npm`:
+    ```bash
+    npm run dev
+    ```
+
+    Ou com `yarn`:
+    ```bash
+    yarn dev
+    ```
+
+4. Acesse o projeto em `http://localhost:3000` no seu navegador.
+
+## Comandos úteis
+
+- `npm run dev` ou `yarn dev`: Inicia o servidor de desenvolvimento.
+- `npm run build` ou `yarn build`: Cria a versão de produção.
+- `npm run preview` ou `yarn preview`: Visualiza a versão de produção localmente.
+
+## Estrutura do projeto
+
+- `src/`: Diretório com os arquivos principais do código.
+- `public/`: Diretório com arquivos estáticos (ex: `index.html`).
+
+## License
+
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
