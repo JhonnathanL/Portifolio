@@ -12,8 +12,8 @@ Este é um template simples de um projeto utilizando React, TypeScript e Vite.
 1. Clone o repositório:
 
     ```bash
-    git clone https://link-do-repositorio.git
-    cd nome-do-projeto
+    git clone https://github.com/JhonnathanL/Portifolio-V2
+    cd Portifolio-V2
     ```
 
 2. Instale as dependências:
