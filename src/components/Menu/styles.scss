@@ -1,23 +1,37 @@
-ul{
+nav > ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap:5%;
+    gap: 5%;
     margin: 0;
+    padding: 0;
+    top:0;
+    z-index: 2;
     height: 5rem;
     align-items: center;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.432);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.226);
+    position: fixed;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
 
-    a{
-        color:black;
-        text-transform: uppercase;
-        font-size: 1.2rem;
-        transition: ease-in-out 0.3s;
-    }
+li {
+    position: relative;
+    display: inline-block; 
+}
 
-    a:hover{
-        color:rgb(145, 201, 219);
-        scale: 1.1;
-        font-size: 1.4rem;
-    }
+a {
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    transform-origin: center; 
+}
+
+a:hover {
+    color: rgb(145, 201, 219);
+    transform: scale(1.1); 
+    font-size: 1.2rem; 
 }

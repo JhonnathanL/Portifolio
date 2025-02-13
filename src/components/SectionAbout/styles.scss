@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+}
+
+.wrapper{
+    flex:1;
+    margin: 3% 4% 3% 8%;
+}
+
+.break{
+    height: 1rem;
+}
+
+.skills{
+    padding:0;
+}
+
+.skills> li{
+    border: 1px solid #c4c5c5;
+    border-radius: 12%;
+    padding: 3%;
+    margin: 1%;
+    transition: ease-in-out 0.3s;
+    background-color: rgb(245, 245, 245);
+}
+
+.skills > li:hover{
+    background-color: rgba(144, 200, 226, 0.748);
+    cursor: pointer;
+    transform: translateY(-5px);
+    color: rgb(73, 73, 73);
+    box-shadow: 0 0 10px rgba(11, 119, 169, 0.2);
+}

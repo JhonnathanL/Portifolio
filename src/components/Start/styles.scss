@@ -1,33 +1,30 @@
-.fundo {
-    margin: 5%;
+.background {
+    margin: 3% 5% 3% 5%;
     background: linear-gradient(
         to right,
         rgba(166, 195, 208, 0.748),
         rgba(96, 176, 213, 0.748)
     );
-    height: 30rem;
+    height: 28rem;
     border-radius: 1rem;
     text-align: center;
 
     display: flex;
     align-items: center;
     justify-content: center; 
-    
     flex-direction: column;
-
     transition: ease-in-out 0.5s;
 }
 
-.fundo h1{
+.background h1{
     font-size: 4rem;
 }
 
-.fundo p {
-    font-family: 'Exo', sans-serif;
+.background p {
     font-size: 1.3rem;
     margin: 0% 10%;
 }
 
-.fundo:hover{
-    scale: 1.05;
+.background:hover{
+    scale: 1.02;
 }
