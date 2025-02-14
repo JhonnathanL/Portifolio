@@ -1,6 +1,12 @@
 import React from 'react';
 import './styles.scss';
 
+const skills = [
+    'JavaScript', 'Python', 'React.js', 'TypeScript', 'SQL', 'Node.js', 'HTML', 'CSS'
+];
+
+const inDevelopment = ['Angular', 'Vue.js'];
+
 const SectionAbout: React.FC = () => {
     return (
         <div className="container">
@@ -21,19 +27,15 @@ const SectionAbout: React.FC = () => {
             <div className="wrapper">
                 <h2>Habilidades</h2>
                 <ul className="skills">
-                    <li>React.js</li>
-                    <li>TypeScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>SQL</li>
-                    <li>Python</li>
-                    <li>Node.js</li>
+                    {skills.map((skill, index) => (
+                        <li key={index}>{skill}</li>
+                    ))}
                 </ul>
                 <h2>Em Desenvolvimento</h2>
                 <ul className="skills">
-                    <li>Angular</li>
-                    <li>Vue.js</li>
+                    {inDevelopment.map((tech, index) => (
+                        <li key={index}>{tech}</li>
+                    ))}
                 </ul>
             </div>
         </div>

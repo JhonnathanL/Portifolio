@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './styles.scss';
 
 const Start: React.FC = () => {
+  useEffect(() => {
+    const backgroundElement = document.querySelector('.background');
+    if (backgroundElement) {
+      backgroundElement.classList.add('loaded');
+    }
+  }, []);
+
   return (
     <section>
       <div className="background">

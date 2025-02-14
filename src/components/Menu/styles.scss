@@ -1,37 +1,36 @@
 nav > ul {
-    list-style: none;
     display: flex;
     justify-content: center;
-    gap: 5%;
+    align-items: center;
+    gap: 4%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    background: white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    list-style: none;
     margin: 0;
     padding: 0;
-    top:0;
     z-index: 2;
-    height: 5rem;
-    align-items: center;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.226);
-    position: fixed;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
 }
 
 li {
-    position: relative;
-    display: inline-block; 
+    display: inline-block;
 }
 
-a {
+li >a {
     color: black;
-    text-transform: uppercase;
     font-size: 1.2rem;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-    display: block;
-    font-family: Arial, Helvetica, sans-serif;
-    transform-origin: center; 
-}
-
-a:hover {
-    color: rgb(145, 201, 219);
-    transform: scale(1.1); 
-    font-size: 1.2rem; 
+    text-transform: uppercase;
+    font-family: Arial;
+    transition: all 0.4s ease;
+    
+    &:hover {
+        color: white;
+        background-color: rgb(15, 164, 213);
+        padding:5px 10px 5px 10px;
+        border-radius: 10px;
+        transform: scale(1.1);
+    }
 }
