@@ -1,5 +1,5 @@
 .dark{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.892);
 }
 
 .font-dark{
@@ -8,4 +8,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.margin-name{
+    margin-left: 4px;
 }

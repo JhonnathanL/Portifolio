@@ -33,6 +33,10 @@
     box-shadow: 0 0 10px rgba(11, 119, 169, 0.2);
 }
 
+h2{
+    filter: blur(0.2px);
+}
+
 @media (max-width: 768px) { 
     .container {
       flex-direction: column;

@@ -73,7 +73,7 @@ const SectionExperience: React.FC = () => {
             </div>
             
             <div className="wrapper">
-                <h2>Diploma</h2>
+                <h2>Diploma Ensino Superior</h2>
                 <ExperienceTopic 
                     image={Fei_icon} 
                     width={140} 
@@ -84,7 +84,7 @@ const SectionExperience: React.FC = () => {
                     hasSplit={false}
                 />
                 
-                <div className="spaccer" />
+                <div className="spaccer bigger" />
                 <h2>Certificados Relevantes</h2>
                 
                 <ExperienceTopic 
