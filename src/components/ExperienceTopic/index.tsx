@@ -9,9 +9,10 @@ interface ExperienceTopicProps {
     date: string;
     about?: React.ReactNode;
     hasLink?: string;
+    hasSplit?: boolean;
 }
 
-const ExperienceTopic: React.FC<ExperienceTopicProps> = ({ image, width, title, company, date, about, hasLink }) => {
+const ExperienceTopic: React.FC<ExperienceTopicProps> = ({ image, width, title, company, date, about, hasLink, hasSplit }) => {
     return (
         <>
             <div className="experience-container">
@@ -31,9 +32,20 @@ const ExperienceTopic: React.FC<ExperienceTopicProps> = ({ image, width, title, 
             )}
             {hasLink && (
                 <a href={hasLink} target="_blank" rel="noopener noreferrer">
-                    <button>Exibir</button>
+                    <button className='btn-credential'>Exibir Credencial</button>
                 </a>
             )}
+           {hasSplit ? (
+                <>
+                    <hr className="splitter-bottom" />
+                </>
+            ) : (
+                <>
+
+                <div className="spaccer"/>
+                </>
+            )}
+           
         </>
     );
 }

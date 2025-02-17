@@ -34,3 +34,15 @@
     font-size: 1.3rem;
     margin: 0% 10%;
 }
+
+@media (max-width: 768px) {
+ .background{
+    margin: 2%;
+    height: 36rem;
+    margin-top: 9rem;
+ };
+ .background h1{
+    font-size: 2rem;
+ }
+ 
+}

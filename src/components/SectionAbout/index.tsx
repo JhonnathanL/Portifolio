@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.scss';
 
 const skills = [
-    'JavaScript', 'Python', 'React.js', 'TypeScript', 'SQL', 'Node.js', 'HTML', 'CSS'
+    'JavaScript', 'Python', 'React.js', 'TypeScript', 'SQL','Git', 'Node.js', 'HTML', 'CSS'
 ];
 
 const inDevelopment = ['Angular', 'Vue.js'];

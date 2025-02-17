@@ -19,12 +19,12 @@ li {
     display: inline-block;
 }
 
-li >a {
+li > a {
     color: black;
     font-size: 1.2rem;
     text-transform: uppercase;
-    font-family: Arial;
     transition: all 0.4s ease;
+    filter: blur(0.4px);
     
     &:hover {
         color: white;
@@ -33,4 +33,11 @@ li >a {
         border-radius: 10px;
         transform: scale(1.1);
     }
+}
+
+@media (max-width: 768px) {
+    .menu a {
+        font-size: 0.7rem;
+    }
+    
 }
