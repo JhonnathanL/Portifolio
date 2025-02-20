@@ -1,5 +1,5 @@
 .background {
-    margin: 10%;
+    margin: 10% 11% 10% 12%;
     background: linear-gradient(
         to right,
         rgba(166, 195, 208, 0.748) 0%,   
@@ -7,7 +7,7 @@
         rgba(120, 179, 228, 0.748) 66%, 
         rgba(69, 129, 182, 0.748) 100%   
     );
-    height: 28rem;
+    height: 36rem;
     border-radius: 1rem;
     text-align: center;
     display: flex;
@@ -15,7 +15,7 @@
     justify-content: center; 
     flex-direction: column;
     transition: background 0.5s ease-in-out, opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-    margin-top: 8%;
+    margin-top: 2%;
     margin-bottom: 1%;
     opacity: 0; 
     transform: translateY(20px); 

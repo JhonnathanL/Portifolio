@@ -1,47 +1,171 @@
 html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
-  
-nav > ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4%;
-    position: fixed;
+
+.site-header {
+    width: 90%;
+    max-width: 1280px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    margin: 0 auto 20px;
+    border-radius: 30px;
+    position: sticky;
     top: 0;
-    width: 100%;
-    height: 5rem;
-    background: white;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.kitten-token-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    gap: 10px;
+    flex: 1;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header-logo {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.header-text {
+    font-size: 2rem;
+    font-family: 'Georgia', serif;
+}
+
+.header-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    margin-right: auto;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 8px 12px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-nav a:hover {
+    background-color: #0073e6;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1001;
+}
+
+.hamburger-menu div {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.social-icon {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    flex: 1;
+    margin-left: 30px;
+}
+
+.social-icon-img {
+    width: 44px;
+    height: auto;
+    border-radius: 50%;
+}
+
+nav > ul {
+    width: 90%;
+    max-width: 1280px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    margin: 0 auto 20px;
+    border-radius: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menu {
     list-style: none;
-    margin: 0;
     padding: 0;
-    z-index: 2;
+    margin: 0;
+    display: flex;
+    gap: 20px;
 }
 
-li {
-    display: inline-block;
-}
-
-li > a {
+.menu-item {
     color: black;
     font-size: 1.3rem;
     text-transform: uppercase;
     transition: all 0.4s ease;
     filter: blur(0.4px);
-    
-    &:hover {
-        color: white;
-        background-color: rgb(15, 164, 213);
-        padding:5px 10px 5px 10px;
-        border-radius: 10px;
-        transform: scale(1.1);
-    }
+}
+
+.menu-item:hover {
+    color: white;
+    background-color: rgb(15, 164, 213);
+    padding: 5px 10px;
+    border-radius: 10px;
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
-    .menu a {
-        font-size: 0.8rem;
+    .header-inner {
+        flex-direction: column;
+        align-items: center;
     }
     
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .header-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 15px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-nav.active {
+        display: flex;
+    }
+
+    .header-nav a {
+        font-size: 1rem;
+        padding: 10px;
+        text-align: center;
+    }
 }
