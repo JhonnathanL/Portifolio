@@ -1,4 +1,5 @@
 import './App.css';
+import FooterIcons from './components/FooterIcons';
 import FooterInfo from './components/FooterInfo';
 import Menu from './components/Menu';
 import SectionAbout from './components/SectionAbout';
@@ -31,6 +32,7 @@ function App() {
         <Topic title={'Informações'} />
         <SectionContact />
       </div>
+      <FooterIcons/>
       <FooterInfo />
     </>
   );
