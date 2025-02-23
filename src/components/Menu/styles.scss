@@ -97,6 +97,12 @@ html {
     width: 44px;
     height: auto;
     border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.social-icon-img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
 }
 
 nav > ul {

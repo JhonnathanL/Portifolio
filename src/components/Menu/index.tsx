@@ -41,10 +41,10 @@ const Menu: React.FC = () => {
           </nav>
 
           <div className="social-icon">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/JhonnathanL" target="_blank" rel="noopener noreferrer">
               <img src={gitIcon} alt="GitHub" className="social-icon-img" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/jhonnathan-sousa/" target="_blank" rel="noopener noreferrer">
               <img src={linkedinIcon} alt="LinkedIn" className="social-icon-img" />
             </a>
           </div>
