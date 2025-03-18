@@ -16,7 +16,7 @@ const ExperienceTopic: React.FC<ExperienceTopicProps> = ({ image, width, title, 
     return (
         <>
             <div className="experience-container">
-                <img className="wrapper-exp" src={image} width={width} alt={title} />
+                <img className="wrapper-exp" src={image} width={width} alt={title} style={{borderRadius:'12px'}} />
                 <p className="experience-text">
                     <strong>{title}</strong>
                     <div className="spaccer" />

@@ -1,12 +1,12 @@
 import React from 'react';
 import ExperienceTopic from '../ExperienceTopic';
 import './styles.scss';
-
 import Finnet_icon from '../../assets/Finnet_icon.png';
 import Koppert_icon from '../../assets/Koppert_icon.png';
 import Meta_icon from '../../assets/Meta_icon.png';
 import paranoa_icon from '../../assets/paranoa_icon.png';
 import Fei_icon from '../../assets/fei_logo.png';
+import Fiap_icon from '../../assets/fiap_icon.png';
 
 const SectionExperience: React.FC = () => {
     return (
@@ -56,7 +56,7 @@ const SectionExperience: React.FC = () => {
                 
                 <ExperienceTopic 
                     image={Koppert_icon} 
-                    width={120} 
+                    width={120}
                     title={'Iniciação em Desenvolvimento Full-Stack'} 
                     company={'Koppert Do Brasil Holding Ltda'} 
                     date={'Janeiro de 2022 - Fevereiro de 2023'}
@@ -77,9 +77,17 @@ const SectionExperience: React.FC = () => {
                     image={Fei_icon} 
                     width={140} 
                     title={'Bacharel em Ciência da Computação na FEI'} 
-                    company={'Meta/Facebook'} 
-                    date={'22 de dezembro de 2023'}
+                    company={'Centro Universitário FEI'} 
+                    date={'Janeiro de 2020 - Janeiro 2024'}
                     hasLink='https://drive.google.com/file/d/1pPcxLphQY6Mz8olEJUfDrpvU09CmwBW4/view?usp=sharing'
+                    hasSplit={false}
+                />
+                <ExperienceTopic 
+                    image={Fiap_icon} 
+                    width={140} 
+                    title={'Pós-graduação Lato Sensu - Especialização em Full Stack Development'} 
+                    company={'FIAP'} 
+                    date={'Março de 2025 - Abril 2026'}
                     hasSplit={false}
                 />
                 
