@@ -26,7 +26,7 @@ const ExperienceTopic: React.FC<ExperienceTopicProps> = ({ image, width, title, 
                 </p>
             </div>
             {about && (
-                <div className="experience-container" style={{ marginLeft: "12%" }}>
+                <div className="experience-container" style={{ marginLeft: "0%" }}>
                     <p>{about}</p>
                 </div>
             )}
