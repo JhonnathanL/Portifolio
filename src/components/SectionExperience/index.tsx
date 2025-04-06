@@ -25,6 +25,9 @@ const SectionExperience: React.FC = () => {
                             <p>• Implementei e otimizei APIs utilizando Python e FastAPI, garantindo alta 
                                 performance e escalabilidade na integração de dados entre sistemas internos.</p>
 
+                            <p> • Desenvolvi APIs em C# com .NET Framework e ASP.NET MVC5, otimizando a integração de 
+                                dados entre sistemas internos. </p>
+
                             <p> •  Desenvolvi dashboards interativos com React.js e TypeScript para o site interno
                                  da empresa, permitindo que os clientes acessassem informações estratégicas de forma intuitiva.</p>
 

@@ -2,8 +2,18 @@ import React from 'react';
 import './styles.scss';
 
 const skills = [
-    'JavaScript', 'Python', 'React.js', 'TypeScript', 'SQL','Git', 'Node.js', 'HTML', 'CSS'
-];
+    'JavaScript / HTML / CSS',
+    'Python',
+    'React.js',
+    'TypeScript',
+    'SQL',
+    'Git',
+    'Node.js',
+    'C#',
+    '.NET Framework',
+    'ASP.NET MVC5',
+    'Razor'
+  ];  
 
 const inDevelopment = ['Angular', 'Vue.js'];
 
@@ -17,7 +27,7 @@ const SectionAbout: React.FC = () => {
                     Ciência da Computação</strong> pelo Centro Universitário FEI.
                 </p>
                 <p>
-                    Durante esse período, trabalhei com diversas tecnologias, incluindo HTML, CSS, JavaScript, React.js, Node.js, 
+                    Durante esse período, trabalhei com diversas tecnologias, incluindo HTML, CSS, JavaScript, React.js, C#, Node.js 
                     sempre buscando melhorar a performance e a qualidade dos meus projetos.
                 </p>
                 <p>
