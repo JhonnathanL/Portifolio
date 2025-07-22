@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.scss';
-import project1 from '../../assets/Project1.png';
+import project4 from '../../assets/Project4.png';
 import project2 from '../../assets/Project2.png';
 
 const SectionProjects: React.FC = () => {
@@ -8,19 +8,18 @@ const SectionProjects: React.FC = () => {
         <>
         <div className="container">
             <div className="wrapper">
-                <h2>Site de Hospedagem</h2>
+                <h2>Site de Compliance</h2>
                 <p>
-                    Um website elaborado com o propósito de aprimorar minhas habilidades em <strong>HTML, CSS e JavaScript</strong>.
+                    Este website foi desenvolvido com o objetivo de aprimorar minhas habilidades em <strong>Next.js</strong>.
                 </p>
                 <p>
-                    A plataforma de hospedagem foi construída a partir de um template disponível online, 
-                    sendo toda a codificação própria.
+                    A estrutura de hospedagem foi baseada em templates modernos online, porém toda a codificação do site é de autoria própria.
                 </p>
             </div>
             <div className="wrapper">
-                <img className="img-project" src={project1} alt="Preview do projeto de hospedagem" />
+                <img className="img-project" src={project4} alt="Preview do projeto de compliance" />
                 <a 
-                    href="https://jhonnathanl.github.io/Site-de-Hospedagem/" 
+                    href="https://regula.im/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                 >
